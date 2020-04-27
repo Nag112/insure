@@ -1,0 +1,111 @@
+/* GENERAL */
+
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: "DM Serif Display", serif;
+}
+
+section {
+    padding: 0 10%;
+}
+
+
+/* HEADER */
+
+#header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-link {
+    padding: 0 20px;
+}
+
+.nav-link a {
+    color: #837d87;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    color: #2b272f;
+}
+
+.plans-button {
+    cursor: pointer;
+    padding: 10px 40px;
+    background: transparent;
+    border: 1px solid;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+}
+
+#header .plans-button {
+    color: #2b272f;
+}
+
+#header .plans-button:hover {
+    background: #2b272f;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    #header, .nav-items {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .nav-items {
+        display: none;
+        margin-left: 0;
+        align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        align-self: flex-end;
+        display: initial;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .nav-toggle-show {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+    #header .plans-button {
+        width: 95%;
+        margin: auto;
+    }
+}
+
