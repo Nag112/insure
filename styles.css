@@ -94,7 +94,6 @@ a {
     
     .nav-toggle {
         display: block;
-        cursor: pointer;
         float: right;
         padding-right: 5%;
     }
